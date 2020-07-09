@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="92f47cab-326a-488c-bce7-ed4c1a844cd9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="android" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="cleanup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="install" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dyphdaLQ4kJ1F6SCh4wI4MP76d" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="gradle.compiler" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Signing Configs" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.namee.purchasehelper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.PurchaseHelper [build]">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchaseHelper [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PurchaseHelper [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PurchaseHelper [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PurchaseHelper [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="init" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PurchaseHelper [lintFix]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="lintFix" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PurchaseHelper [build]" />
+        <item itemvalue="Gradle.PurchaseHelper [assemble]" />
+        <item itemvalue="Gradle.PurchaseHelper [init]" />
+        <item itemvalue="Gradle.PurchaseHelper [lintFix]" />
+        <item itemvalue="Gradle.PurchaseHelper [buildDependents]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92f47cab-326a-488c-bce7-ed4c1a844cd9" name="Default Changelist" comment="" />
+      <created>1593407307283</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593407307283</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1427" y="610" key="#PSD" timestamp="1593655628217">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state x="1427" y="610" key="#PSD/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1593655628217" />
+    <state x="1445" y="681" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594262281135">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state x="1445" y="681" key="#com.intellij.fileTypes.FileTypeChooser/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594262281135" />
+    <state x="1715" y="588" key="#com.intellij.ide.util.MemberChooser" timestamp="1593655232871">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state x="1715" y="588" key="#com.intellij.ide.util.MemberChooser/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1593655232871" />
+    <state x="1410" y="582" key="#xdebugger.evaluate" timestamp="1593424253247">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state x="1410" y="582" key="#xdebugger.evaluate/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1593424253247" />
+    <state x="1235" y="633" key="AndroidCreateResourceFileDialog" timestamp="1593593693189">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state x="1235" y="633" key="AndroidCreateResourceFileDialog/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1593593693189" />
+    <state x="1590" y="794" key="Github.CreateGistDialog" timestamp="1594261952398">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state x="1590" y="794" key="Github.CreateGistDialog/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261952398" />
+    <state x="1564" y="810" key="Github.ShareDialog" timestamp="1594270605161">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state x="1564" y="810" key="Github.ShareDialog/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594270605161" />
+    <state width="2754" height="501" key="GridCell.Tab.0.bottom" timestamp="1594261087656">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state width="2754" height="501" key="GridCell.Tab.0.bottom/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261087656" />
+    <state width="2754" height="501" key="GridCell.Tab.0.center" timestamp="1594261087656">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state width="2754" height="501" key="GridCell.Tab.0.center/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261087656" />
+    <state width="2754" height="501" key="GridCell.Tab.0.left" timestamp="1594261087656">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state width="2754" height="501" key="GridCell.Tab.0.left/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261087656" />
+    <state width="2754" height="501" key="GridCell.Tab.0.right" timestamp="1594261087656">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state width="2754" height="501" key="GridCell.Tab.0.right/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261087656" />
+    <state width="2754" height="613" key="GridCell.Tab.1.bottom" timestamp="1594261056684">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state width="2754" height="613" key="GridCell.Tab.1.bottom/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
+    <state width="2754" height="613" key="GridCell.Tab.1.center" timestamp="1594261056684">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state width="2754" height="613" key="GridCell.Tab.1.center/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
+    <state width="2754" height="613" key="GridCell.Tab.1.left" timestamp="1594261056684">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state width="2754" height="613" key="GridCell.Tab.1.left/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
+    <state width="2754" height="613" key="GridCell.Tab.1.right" timestamp="1594261056684">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state width="2754" height="613" key="GridCell.Tab.1.right/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
+    <state x="1389" y="572" key="NewModule_or_Project.wizard" timestamp="1594262128956">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state x="1389" y="572" key="NewModule_or_Project.wizard/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594262128956" />
+    <state x="1404" y="510" key="SettingsEditor" timestamp="1593655558599">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state x="1404" y="510" key="SettingsEditor/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1593655558599" />
+    <state width="1286" height="848" key="XDebugger.FullValuePopup" timestamp="1593415854120">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state width="1286" height="848" key="XDebugger.FullValuePopup/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1593415854120" />
+    <state x="1555" y="628" width="695" height="486" key="find.popup" timestamp="1593590854336">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state x="1555" y="628" width="695" height="486" key="find.popup/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1593590854336" />
+    <state x="1312" y="418" width="670" height="676" key="search.everywhere.popup" timestamp="1594270666804">
+      <screen x="0" y="23" width="3200" height="1698" />
+    </state>
+    <state x="1312" y="418" width="670" height="676" key="search.everywhere.popup/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594270666804" />
+  </component>
+</project>
