@@ -5,23 +5,15 @@ import android.webkit.WebView;
 
 import io.realm.Realm;
 
-public class GMarketInterface {
-    WebView view;
-    PurchaseConfig config;
-    String html;
-    String url;
-    boolean isStop;
-
+public class GMarketInterface extends ScriptInterface {
     public GMarketInterface(WebView view, PurchaseConfig config) {
-        this.view = view;
-        this.config = config;
+        super(view, config);
     }
 
     @JavascriptInterface
+    @Override
     public void getHtml(String html, String url) {
-        this.html = html;
-        this.url = url;
-        if(isStop) return;
+        super.getHtml(html, url);
         if (isIndex()) {
             clickMy();
             return;
@@ -35,15 +27,15 @@ public class GMarketInterface {
             return;
         }
         if (isCart()) {
-            if (isClosed()) {
-                sleep();
-                refresh();
-            } else {
-                buy();
-            }
+            buy();
+//            if (isClosed()) {
+//                sleep();
+//                refresh();
+//            } else {
+//                buy();
+//            }
             return;
         }
-        refresh();
     }
 
     public void sleep() {
@@ -101,7 +93,14 @@ public class GMarketInterface {
         runScript(
                 "var chk = document.querySelector('input[type=checkbox]'); " +
                         "if(!chk.checked) chk.click();" +
-                        "document.querySelector('.btn_submit').click();");
+                        "document.querySelector('.btn_submit').click();" +
+                        "document.querySelectorAll('span').forEach((item) => {" +
+                        "   if(item.innerHTML == '판매불가 상품이 포함되어 있습니다. 다시 확인해 주세요.') {" +
+                        "       setTimeout(() => {" +
+                        "           location.reload();" +
+                        "       }, " + config.refreshTime + ");" +
+                        "   }" +
+                        "});");
     }
 
     public void selectBank() {
@@ -119,18 +118,5 @@ public class GMarketInterface {
 //                        "document.querySelector('.logo.logo_woori').parentElement.click();");
 //                        "document.querySelector('[data-ng-bind=paymentButtonTitle]').click();");
 
-    }
-
-    private void runScript(final String script) {
-        view.post(new Runnable() {
-            @Override
-            public void run() {
-                view.loadUrl("javascript:var runbuy = function() { try {" + script + "} catch(e) { setTimeout(runbuy, 200); }}; runbuy();");
-            }
-        });
-    }
-
-    public void stop() {
-        isStop = true;
     }
 }

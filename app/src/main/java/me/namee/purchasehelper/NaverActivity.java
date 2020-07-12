@@ -35,11 +35,7 @@ public class NaverActivity extends AppCompatActivity {
             public void onPageFinished(WebView view, String url) {
                 if (naverInterface == null) return;
                 naverInterface.url = url;
-                if (naverInterface.isBuyPage()) {
-                    naverInterface.selectBank();
-                } else {
-                    view.loadUrl("javascript:window.Android.getHtml(document.getElementsByTagName('html')[0].innerHTML, '" + url + "')");
-                }
+                view.loadUrl("javascript:window.Android.getHtml(document.getElementsByTagName('html')[0].innerHTML, '" + url + "')");
             }
 
             @Override

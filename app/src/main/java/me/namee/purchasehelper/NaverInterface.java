@@ -3,23 +3,15 @@ package me.namee.purchasehelper;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 
-public class NaverInterface {
-    WebView view;
-    PurchaseConfig config;
-    String html;
-    String url;
-    boolean isStop;
-
+public class NaverInterface extends ScriptInterface {
     public NaverInterface(WebView view, PurchaseConfig config) {
-        this.view = view;
-        this.config = config;
+        super(view, config);
     }
 
     @JavascriptInterface
+    @Override
     public void getHtml(String html, String url) {
-        this.html = html;
-        this.url = url;
-        if (isStop) return;
+        super.getHtml(html, url);
         if (isIndex()) {
             clickMy();
             return;
@@ -45,14 +37,15 @@ public class NaverInterface {
             checkBuyPage(url);
             return;
         }
-        refresh();
     }
+
     @JavascriptInterface
     public void checkBuyPage(String url) {
         if (isBuyPage()) {
             buy();
+            return;
         }
-        sleep(200);
+        sleep(100);
         runScript("javascript:window.Android.checkBuyPage(location.href)");
     }
 
@@ -77,7 +70,7 @@ public class NaverInterface {
     }
 
     public boolean isCart() {
-        return url.contains("/products/");
+        return !isBuyPage() && url.contains("/products/");
     }
 
     public boolean isMy() {
@@ -123,48 +116,37 @@ public class NaverInterface {
 
     public void clickBuy() {
         Util.toast(view.getContext(), "구매버튼 클릭");
-        runScript("var btns = [];document.querySelectorAll('button').forEach(function(btn) {if(btn.innerHTML.indexOf('구매하기') > -1) btns.push(btn)});" +
-                "if(btns[0].clientHeight > 0 ) btns[0].click(); if(btns[1].clientHeight > 0) btns[1].click();");
-        checkBuyPage(url);
-//        sleep(500);
-//        runScript("javascript:window.Android.getHtml(document.getElementsByTagName('html')[0].innerHTML, location.href)");
+        runScript("window.btnClicked = false;" +
+                "var btns = [];" +
+                "" +
+                "document.querySelectorAll('button').forEach(" +
+                "   function(btn) {" +
+                "       if(btn.innerHTML.indexOf('구매하기') > -1) " +
+                "           btns.push(btn)" +
+                "   }" +
+                ");" +
+                "if (btns[0].clientHeight > 0 ) {" +
+                "   btns[0].click();" +
+                "} " +
+                "if (btns[1].clientHeight > 0) {" +
+                "   if (findByInnerHTML('div', '옵션을 먼저 선택해주세요.')) {" +
+                "       document.querySelectorAll('a[role=option]')[0].click();" +
+                "   }" +
+                "   btns[1].click();" +
+                "   window.btnClicked = true;" +
+                "}" +
+                "if (!window.btnClicked) throw new Error('btn not clicked');");
+        //checkBuyPage(url);
     }
 
     public void buy() {
         Util.toast(view.getContext(), "구매옵션 선택");
         runScript("document.querySelector('.paymethod > #basic').parentElement.children[1].click(); " +
                 "document.querySelectorAll('strong').forEach((item)=>{if(item.innerHTML == '나중에 결제') item.parentElement.click();});" +
-                "document.querySelector('#all_agree_btn').focus();document.querySelector('#all_agree_btn').click(); " +
-                "document.querySelectorAll('span').forEach((item)=>{if(item.innerHTML == '주문하기') item.parentElement.click();});");
-    }
-
-    public void selectBank() {
-        runScript(
-                "       document.getElementById('payChk2').focus();" +
-                        "document.getElementById('payChk2').click();" +
-                        "document.getElementById('chk_1_2').focus();" +
-                        "document.getElementById('chk_1_2').click();" +
-                        "document.querySelector('.sp_cart.ico_ibkbank').parentElement.focus();" +
-                        "document.querySelector('.sp_cart.ico_ibkbank').parentElement.click();" +
-                        "document.querySelector('[data-ng-bind=paymentButtonTitle]').click();");
-//        runScript("document.querySelector('[data-ng-bind=paymentButtonTitle]').click();");
-//        runScript(
-//                "document.querySelectorAll('.box__payment-wrap ul li a')[1].click();" +
-//                        "document.querySelector('.logo.logo_woori').parentElement.click();");
-//                        "document.querySelector('[data-ng-bind=paymentButtonTitle]').click();");
-
-    }
-
-    private void runScript(final String script) {
-        view.post(new Runnable() {
-            @Override
-            public void run() {
-                view.loadUrl("javascript:var runbuy = function() { try {" + script + "} catch(e) { setTimeout(runbuy, 200); }}; runbuy();");
-            }
-        });
-    }
-
-    public void stop() {
-        isStop = true;
+                "document.querySelector('#all_agree_btn').focus();" +
+                "if (document.querySelector('#all_agree_btn') != 'on') {" +
+                "   document.querySelector('#all_agree_btn').click(); " +
+                "}" +
+                "document.querySelector('._doPayText').parentElement.click();");
     }
 }
