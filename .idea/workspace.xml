@@ -7,14 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92f47cab-326a-488c-bce7-ed4c1a844cd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/ScriptInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/GMarketInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/GMarketInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/NaverActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/NaverActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/NaverInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/NaverInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +30,34 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="cleanup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PurchaseHelper" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -80,7 +102,7 @@
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunManager" selected="Gradle.PurchaseHelper [build]">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -158,25 +180,6 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PurchaseHelper [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="PurchaseHelper [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -189,6 +192,25 @@
         <option name="taskNames">
           <list>
             <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PurchaseHelper [cleanBuildCache]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="cleanBuildCache" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -237,10 +259,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.PurchaseHelper [build]" />
+        <item itemvalue="Gradle.PurchaseHelper [cleanBuildCache]" />
         <item itemvalue="Gradle.PurchaseHelper [assemble]" />
         <item itemvalue="Gradle.PurchaseHelper [init]" />
         <item itemvalue="Gradle.PurchaseHelper [lintFix]" />
-        <item itemvalue="Gradle.PurchaseHelper [buildDependents]" />
       </list>
     </recent_temporary>
   </component>
@@ -255,6 +277,14 @@
       <option name="presentableId" value="Default" />
       <updated>1593407307283</updated>
     </task>
+    <task id="LOCAL-00001" summary="구매버튼 속도 증가 및 안정성 패치. &#10;&#10;네이버 구매옵션이 있을 경우 1개까지만 첫번째 옵션으로 자동선택">
+      <created>1594548273708</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594548273708</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,6 +299,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="구매버튼 속도 증가 및 안정성 패치. &#10;&#10;네이버 구매옵션이 있을 경우 1개까지만 첫번째 옵션으로 자동선택" />
+    <option name="LAST_COMMIT_MESSAGE" value="구매버튼 속도 증가 및 안정성 패치. &#10;&#10;네이버 구매옵션이 있을 경우 1개까지만 첫번째 옵션으로 자동선택" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1427" y="610" key="#PSD" timestamp="1593655628217">
@@ -291,6 +325,10 @@
       <screen x="0" y="23" width="3200" height="1698" />
     </state>
     <state x="1235" y="633" key="AndroidCreateResourceFileDialog/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1593593693189" />
+    <state x="4407" y="827" key="CommitChangelistDialog2" timestamp="1594548272994">
+      <screen x="3840" y="714" width="1920" height="1040" />
+    </state>
+    <state x="4407" y="827" key="CommitChangelistDialog2/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594548272994" />
     <state x="1590" y="794" key="Github.CreateGistDialog" timestamp="1594261952398">
       <screen x="0" y="23" width="3200" height="1698" />
     </state>
@@ -299,45 +337,45 @@
       <screen x="0" y="23" width="3200" height="1698" />
     </state>
     <state x="1564" y="810" key="Github.ShareDialog/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594270605161" />
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1594547758995">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1594551407860">
       <screen x="3840" y="714" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594547758995" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551407860" />
     <state width="2754" height="501" key="GridCell.Tab.0.bottom/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261087656" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1594547758995">
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1594551407860">
       <screen x="3840" y="714" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594547758995" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551407860" />
     <state width="2754" height="501" key="GridCell.Tab.0.center/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261087656" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1594547758995">
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1594551407860">
       <screen x="3840" y="714" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594547758995" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551407860" />
     <state width="2754" height="501" key="GridCell.Tab.0.left/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261087656" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1594547758995">
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1594551407860">
       <screen x="3840" y="714" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594547758995" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551407860" />
     <state width="2754" height="501" key="GridCell.Tab.0.right/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261087656" />
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1594547758995">
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1594551396617">
       <screen x="3840" y="714" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594547758995" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551396617" />
     <state width="2754" height="613" key="GridCell.Tab.1.bottom/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
-    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1594547758995">
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1594551396617">
       <screen x="3840" y="714" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594547758995" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551396617" />
     <state width="2754" height="613" key="GridCell.Tab.1.center/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
-    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1594547758995">
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1594551396617">
       <screen x="3840" y="714" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594547758995" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551396617" />
     <state width="2754" height="613" key="GridCell.Tab.1.left/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
-    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1594547758995">
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1594551396617">
       <screen x="3840" y="714" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594547758995" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551396617" />
     <state width="2754" height="613" key="GridCell.Tab.1.right/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
     <state x="1389" y="572" key="NewModule_or_Project.wizard" timestamp="1594262128956">
       <screen x="0" y="23" width="3200" height="1698" />
@@ -348,6 +386,10 @@
     </state>
     <state x="4682" y="1012" key="SettingsEditor/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594543753465" />
     <state x="1404" y="510" key="SettingsEditor/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1593655558599" />
+    <state x="4392" y="967" key="Vcs.Push.Dialog.v2" timestamp="1594548275347">
+      <screen x="3840" y="714" width="1920" height="1040" />
+    </state>
+    <state x="4392" y="967" key="Vcs.Push.Dialog.v2/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594548275347" />
     <state width="1286" height="848" key="XDebugger.FullValuePopup" timestamp="1593415854120">
       <screen x="0" y="23" width="3200" height="1698" />
     </state>
@@ -357,10 +399,10 @@
     </state>
     <state x="4773" y="1085" width="613" height="538" key="find.popup/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594544595117" />
     <state x="1555" y="628" width="695" height="486" key="find.popup/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1593590854336" />
-    <state x="4627" y="956" width="672" height="415" key="search.everywhere.popup" timestamp="1594548216647">
+    <state x="4627" y="956" width="672" height="415" key="search.everywhere.popup" timestamp="1594551481501">
       <screen x="3840" y="714" width="1920" height="1040" />
     </state>
-    <state x="4627" y="956" width="672" height="415" key="search.everywhere.popup/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594548216647" />
+    <state x="4627" y="956" width="672" height="415" key="search.everywhere.popup/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551481501" />
     <state x="1312" y="418" width="670" height="676" key="search.everywhere.popup/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594270666804" />
   </component>
 </project>

@@ -129,7 +129,8 @@ public class NaverInterface extends ScriptInterface {
                 "   btns[0].click();" +
                 "} " +
                 "if (btns[1].clientHeight > 0) {" +
-                "   if (findByInnerHTML('div', '옵션을 먼저 선택해주세요.')) {" +
+                "   var opt = findByInnerHTML('div', '옵션을 먼저 선택해주세요.');" +
+                "   if (opt && opt.clientHeight > 0 && document.querySelectorAll('a[role=option]')[0]) {" +
                 "       document.querySelectorAll('a[role=option]')[0].click();" +
                 "   }" +
                 "   btns[1].click();" +
