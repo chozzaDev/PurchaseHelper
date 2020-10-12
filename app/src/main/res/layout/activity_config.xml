@@ -128,16 +128,47 @@
                     android:hint="구매주소" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="공영쇼핑"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:label="페이비밀번호">
+                android:label="아이디">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/naverPayPw"
+                    android:id="@+id/publicId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="페이비밀번호" />
+                    android:hint="아이디" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:label="비밀번호">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/publicPw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="비밀번호" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:label="구매주소">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/publicUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="구매주소" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
@@ -146,14 +177,6 @@
                 android:layout_height="wrap_content"
                 android:text="저장"
                 android:textColor="#0B0A0A" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="안심해라 서버에 저장 따위 안한다"
-                android:textColor="#F40404" />
-
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

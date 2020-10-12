@@ -52,5 +52,15 @@
             android:paddingVertical="10dp"
             android:text="Naver 시작"
             android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/btnPublicStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#eb5a5a"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:text="공영쇼핑 시작"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

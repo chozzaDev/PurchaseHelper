@@ -16,6 +16,9 @@ public class PurchaseConfig extends RealmObject {
     String naverPw;
     String naverUrl;
     String naverPayPw;
+    String publicId;
+    String publicPw;
+    String publicUrl;
     float waitingTime = 30;
     float refreshTime = 0.5f;
 
@@ -40,6 +43,13 @@ public class PurchaseConfig extends RealmObject {
                 && refreshTime > 0 && waitingTime > 0;
     }
 
+    public boolean runnablePublic() {
+        return !Strings.isNullOrEmpty(publicId)
+                && !Strings.isNullOrEmpty(publicPw)
+                && !Strings.isNullOrEmpty(publicUrl)
+                && refreshTime > 0 && waitingTime > 0;
+    }
+
     public PurchaseConfig copy() {
         PurchaseConfig config = new PurchaseConfig();
         config.gmarketId = gmarketId;
@@ -48,6 +58,9 @@ public class PurchaseConfig extends RealmObject {
         config.naverPw = naverPw;
         config.naverUrl = naverUrl;
         config.naverPayPw = naverPayPw;
+        config.publicId = publicId;
+        config.publicPw = publicPw;
+        config.publicUrl = publicUrl;
         config.waitingTime = waitingTime;
         config.refreshTime = refreshTime;
         return config;

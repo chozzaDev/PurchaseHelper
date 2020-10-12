@@ -41,6 +41,7 @@ public abstract class ScriptInterface {
                         "   try {" +
                         "   " + script + "" +
                         "   } catch(e) { " +
+//                        "       window.Android.error(e.message);" +
                         "       setTimeout(runbuy, 50); throw e;" +
                         "   }" +
                         "}; " +
@@ -51,5 +52,9 @@ public abstract class ScriptInterface {
 
     public void stop() {
         isStop = true;
+    }
+
+    public void error(String message) {
+        System.out.println(message);
     }
 }

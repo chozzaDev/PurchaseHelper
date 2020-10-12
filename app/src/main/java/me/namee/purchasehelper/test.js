@@ -1,6 +1,15 @@
 var open = window.open('https://smartstore.naver.com/kimmaster/products/4983495987');
 var checkBuyBtn = function () {
     console.log('checkBuyBtn');
+    const label = open.document.querySelector('.selectbox-label');
+    if(label) {
+        label.click()
+    }
+    open.document.querySelectorAll('.selectbox-item').forEach((node) => {
+        if(node.innerHTML.indexOf('품절') == -1) {
+            node.click();
+        }
+    })
     var btn = open.document.querySelector('._buy_button');
     if( open.document.querySelector('._buy_button')) {
         btn.click();

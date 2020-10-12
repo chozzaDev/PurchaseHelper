@@ -5,7 +5,6 @@ import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -13,17 +12,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import io.realm.Realm;
 
-public class GMarketActivity extends AppCompatActivity {
+public class PublicActivity extends AppCompatActivity {
 
     WebView view;
-    GMarketInterface gMarketInterface;
+    PublicInterface publicInterface;
     Realm realm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gmarket);
-        view = findViewById(R.id.gmarketWebView);
+        setContentView(R.layout.activity_public);
+        view = findViewById(R.id.publicWebView);
         view.clearCache(true);
         view.clearHistory();
         CookieSyncManager cookieSyncMngr = CookieSyncManager.createInstance(view.getContext());
@@ -34,13 +33,9 @@ public class GMarketActivity extends AppCompatActivity {
         WebViewClient client = new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
-                if (gMarketInterface == null) return;
-                gMarketInterface.url = url;
-                if (gMarketInterface.isBuyPage()) {
-                    gMarketInterface.selectBank();
-                } else {
-                    view.loadUrl("javascript:window.Android.getHtml(document.getElementsByTagName('html')[0].innerHTML, '" + url + "')");
-                }
+                if (publicInterface == null) return;
+                publicInterface.url = url;
+                view.loadUrl("javascript:window.Android.getHtml(document.getElementsByTagName('html')[0].innerHTML, '" + url + "')");
             }
 
             @Override
@@ -51,18 +46,19 @@ public class GMarketActivity extends AppCompatActivity {
         view = new WebView(this);
         view.setWebViewClient(client);
         WebSettingUtil.config(view);
-        gMarketInterface = new GMarketInterface(view, PurchaseConfig.get(realm).copy());
-        view.addJavascriptInterface(gMarketInterface, "Android");
+        view.getSettings().setUserAgentString("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36");
+        publicInterface = new PublicInterface(view, PurchaseConfig.get(realm).copy());
+        view.addJavascriptInterface(publicInterface, "Android");
         setContentView(view);
-        view.loadUrl("https://m.gmarket.co.kr");
+        view.loadUrl("https://www.gongyoungshop.kr/");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         realm.close();
-        gMarketInterface.stop();
-        gMarketInterface = null;
+        publicInterface.stop();
+        publicInterface = null;
         view = null;
     }
 }

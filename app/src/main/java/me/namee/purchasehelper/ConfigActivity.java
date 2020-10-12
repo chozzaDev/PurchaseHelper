@@ -28,7 +28,10 @@ public class ConfigActivity extends AppCompatActivity {
         b.naverId.setText(config.naverId);
         b.naverPw.setText(config.naverPw);
         b.naverUrl.setText(config.naverUrl);
-        b.naverPayPw.setText(config.naverPayPw);
+        b.publicId.setText(config.publicId);
+        b.publicPw.setText(config.publicPw);
+        b.publicUrl.setText(config.publicUrl);
+//        b.naverPayPw.setText(config.naverPayPw);
         b.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +43,10 @@ public class ConfigActivity extends AppCompatActivity {
                 config.naverId = b.naverId.getText().toString();
                 config.naverPw = b.naverPw.getText().toString();
                 config.naverUrl = b.naverUrl.getText().toString();
-                config.naverPayPw = b.naverPayPw.getText().toString();
+                config.publicId = b.publicId.getText().toString();
+                config.publicPw = b.publicPw.getText().toString();
+                config.publicUrl = b.publicUrl.getText().toString();
+//                config.naverPayPw = b.naverPayPw.getText().toString();
                 realm.commitTransaction();
                 Util.toast(getApplicationContext(), "저장되었습니다.");
             }

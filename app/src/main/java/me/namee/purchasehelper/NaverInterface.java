@@ -131,7 +131,12 @@ public class NaverInterface extends ScriptInterface {
                 "if (btns[1].clientHeight > 0) {" +
                 "   var opt = findByInnerHTML('div', '옵션을 먼저 선택해주세요.');" +
                 "   if (opt && opt.clientHeight > 0 && document.querySelectorAll('a[role=option]')[0]) {" +
-                "       document.querySelectorAll('a[role=option]')[0].click();" +
+                "       document.querySelectorAll('a[role=option]').forEach((node) => {" +
+                "           if(node.innerHTML.indexOf('품절') == -1) {" +
+                "               node.click();" +
+                "               return false;" +
+                "           }" +
+                "       })" +
                 "   }" +
                 "   btns[1].click();" +
                 "   window.btnClicked = true;" +

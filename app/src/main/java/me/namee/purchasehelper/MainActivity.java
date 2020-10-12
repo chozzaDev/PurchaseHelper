@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Realm realm;
     Button btnGmarketStart;
     Button btnNaverStart;
-
+    Button btnPublicStart;
     FloatingActionButton btnConfig;
 
     @Override
@@ -65,6 +65,19 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 } else {
                     Util.toast(getApplicationContext(), "Naver 설정이 없습니다.");
+                }
+            }
+        });
+        btnPublicStart = findViewById(R.id.btnPublicStart);
+        btnPublicStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PurchaseConfig config = PurchaseConfig.get(realm);
+                if(config.runnablePublic()) {
+                    Intent intent = new Intent(MainActivity.this, PublicActivity.class);
+                    startActivity(intent);
+                } else {
+                    Util.toast(getApplicationContext(), "공영쇼핑 설정이 없습니다.");
                 }
             }
         });
