@@ -1,8 +1,11 @@
 package me.namee.purchasehelper;
 
 import android.os.Bundle;
+import android.webkit.ConsoleMessage;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
+import android.webkit.JsResult;
+import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
@@ -43,10 +46,28 @@ public class PublicActivity extends AppCompatActivity {
                 System.out.println(error.getDescription());
             }
         };
+        WebChromeClient wcc = new WebChromeClient() {
+            @Override
+            public boolean onConsoleMessage(ConsoleMessage consoleMessage) {
+                System.out.println(consoleMessage.message());
+                return super.onConsoleMessage(consoleMessage);
+            }
+
+            @Override
+            public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
+                Util.toast(view.getContext(), message);
+                result.confirm();
+                view.loadUrl("javascript:window.Android.getHtml(document.getElementsByTagName('html')[0].innerHTML, '" + url + "')");
+                return true;
+            }
+        };
         view = new WebView(this);
         view.setWebViewClient(client);
+        view.setWebChromeClient(wcc);
         WebSettingUtil.config(view);
         view.getSettings().setUserAgentString("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36");
+        view.getSettings().setLoadWithOverviewMode(true);
+        view.getSettings().setUseWideViewPort(true);
         publicInterface = new PublicInterface(view, PurchaseConfig.get(realm).copy());
         view.addJavascriptInterface(publicInterface, "Android");
         setContentView(view);

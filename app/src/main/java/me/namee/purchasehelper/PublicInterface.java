@@ -1,5 +1,6 @@
 package me.namee.purchasehelper;
 
+import android.view.KeyEvent;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 

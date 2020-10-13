@@ -7,176 +7,181 @@
         android:layout_height="match_parent"
         tools:context=".ConfigActivity">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/textView5"
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                android:text="설정"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:label="결제대기시간(초)">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/waitingTime"
+                <TextView
+                    android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="결제대기시간(초)" />
-            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:label="갱신주기(초)">
+                    android:text="설정"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/refreshTime"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="갱신주기(초)" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:label="결제대기시간(초)">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/waitingTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="결제대기시간(초)" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                android:text="GMarket"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:label="아이디">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/gmarketId"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="아이디" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:label="갱신주기(초)">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:label="비밀번호">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/refreshTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="갱신주기(초)" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/gmarketPw"
+                <TextView
+                    android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="비밀번호" />
-            </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                    android:text="GMarket"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-                android:text="Naver"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:label="아이디">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/naverId"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="아이디" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:label="아이디">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:label="비밀번호">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/gmarketId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="아이디" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/naverPw"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="비밀번호" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:label="비밀번호">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:label="구매주소">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/gmarketPw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="비밀번호" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/naverUrl"
+                <TextView
+                    android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="구매주소" />
-            </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                    android:text="Naver"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-                android:text="공영쇼핑"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:label="아이디">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/publicId"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="아이디" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:label="아이디">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:label="비밀번호">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/naverId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="아이디" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/publicPw"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="비밀번호" />
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:label="구매주소">
+                    android:label="비밀번호">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/publicUrl"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/naverPw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="비밀번호" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="구매주소" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:label="구매주소">
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="저장"
-                android:textColor="#0B0A0A" />
-        </LinearLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/naverUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="구매주소" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="공영쇼핑"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:label="아이디">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/publicId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="아이디" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:label="비밀번호">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/publicPw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="비밀번호" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:label="구매주소">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/publicUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="구매주소" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="저장"
+                    android:textColor="#0B0A0A" />
+            </LinearLayout>
+        </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
