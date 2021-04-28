@@ -7,22 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92f47cab-326a-488c-bce7-ed4c1a844cd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/CampingActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/CampingInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_camping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_2_0_alpha01_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/ConfigActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/ConfigActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/NaverInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/NaverInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/PublicActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/PublicActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/PurchaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/PurchaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602566926243</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="네이버 UI 업데이트 대응">
+      <created>1619569577747</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619569577747</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,29 +357,54 @@
     <MESSAGE value="구매버튼 속도 증가 및 안정성 패치. &#10;&#10;네이버 구매옵션이 있을 경우 1개까지만 첫번째 옵션으로 자동선택" />
     <MESSAGE value="공영쇼핑 추가" />
     <MESSAGE value="공영쇼핑 메시지창 떠도 무시하고 계속 실행" />
-    <option name="LAST_COMMIT_MESSAGE" value="공영쇼핑 메시지창 떠도 무시하고 계속 실행" />
+    <MESSAGE value="네이버 UI 업데이트 대응" />
+    <option name="LAST_COMMIT_MESSAGE" value="네이버 UI 업데이트 대응" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2225" height="377" key="GridCell.Tab.0.bottom" timestamp="1619569423036">
+    <state x="956" y="288" key="CommitChangelistDialog2" timestamp="1619569577527">
       <screen x="0" y="25" width="2560" height="1331" />
     </state>
-    <state width="2225" height="377" key="GridCell.Tab.0.bottom/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569423036" />
-    <state width="2225" height="377" key="GridCell.Tab.0.center" timestamp="1619569423035">
+    <state x="956" y="288" key="CommitChangelistDialog2/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569577527" />
+    <state width="2225" height="464" key="GridCell.Tab.0.bottom" timestamp="1619570594291">
       <screen x="0" y="25" width="2560" height="1331" />
     </state>
-    <state width="2225" height="377" key="GridCell.Tab.0.center/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569423035" />
-    <state width="2225" height="377" key="GridCell.Tab.0.left" timestamp="1619569423035">
+    <state width="2225" height="464" key="GridCell.Tab.0.bottom/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619570594291" />
+    <state width="2225" height="464" key="GridCell.Tab.0.center" timestamp="1619570594291">
       <screen x="0" y="25" width="2560" height="1331" />
     </state>
-    <state width="2225" height="377" key="GridCell.Tab.0.left/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569423035" />
-    <state width="2225" height="377" key="GridCell.Tab.0.right" timestamp="1619569423035">
+    <state width="2225" height="464" key="GridCell.Tab.0.center/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619570594291" />
+    <state width="2225" height="464" key="GridCell.Tab.0.left" timestamp="1619570594290">
       <screen x="0" y="25" width="2560" height="1331" />
     </state>
-    <state width="2225" height="377" key="GridCell.Tab.0.right/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569423035" />
-    <state x="1091" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1619569553829">
+    <state width="2225" height="464" key="GridCell.Tab.0.left/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619570594290" />
+    <state width="2225" height="464" key="GridCell.Tab.0.right" timestamp="1619570594291">
       <screen x="0" y="25" width="2560" height="1331" />
     </state>
-    <state x="1091" y="328" width="670" height="676" key="search.everywhere.popup/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569553829" />
+    <state width="2225" height="464" key="GridCell.Tab.0.right/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619570594291" />
+    <state width="2225" height="464" key="GridCell.Tab.1.bottom" timestamp="1619570594292">
+      <screen x="0" y="25" width="2560" height="1331" />
+    </state>
+    <state width="2225" height="464" key="GridCell.Tab.1.bottom/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619570594292" />
+    <state width="2225" height="464" key="GridCell.Tab.1.center" timestamp="1619570594291">
+      <screen x="0" y="25" width="2560" height="1331" />
+    </state>
+    <state width="2225" height="464" key="GridCell.Tab.1.center/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619570594291" />
+    <state width="2225" height="464" key="GridCell.Tab.1.left" timestamp="1619570594291">
+      <screen x="0" y="25" width="2560" height="1331" />
+    </state>
+    <state width="2225" height="464" key="GridCell.Tab.1.left/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619570594291" />
+    <state width="2225" height="464" key="GridCell.Tab.1.right" timestamp="1619570594291">
+      <screen x="0" y="25" width="2560" height="1331" />
+    </state>
+    <state width="2225" height="464" key="GridCell.Tab.1.right/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619570594291" />
+    <state x="1026" y="427" key="Vcs.Push.Dialog.v2" timestamp="1619569579372">
+      <screen x="0" y="25" width="2560" height="1331" />
+    </state>
+    <state x="1026" y="427" key="Vcs.Push.Dialog.v2/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569579372" />
+    <state x="1091" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1619570716201">
+      <screen x="0" y="25" width="2560" height="1331" />
+    </state>
+    <state x="1091" y="328" width="670" height="676" key="search.everywhere.popup/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619570716201" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -74,7 +74,7 @@ public class NaverInterface extends ScriptInterface {
     }
 
     public boolean isMy() {
-        return !isCart() && html.contains("<span class=\"shm_profile_thumb MM_PROFILE\" style=\"\">")
+        return !isCart() && html.contains("<a href=\"/na/\" class=\"shm_na_link\" data-clk=\"profileclick\">")
                 && html.contains("<a href=\"#\" class=\"mf_info_link MM_LOGINOUT\" data-fclk=\"fot.logout\">로그아웃</a>");
     }
 
