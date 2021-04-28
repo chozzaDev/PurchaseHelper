@@ -62,7 +62,7 @@ public class NaverInterface extends ScriptInterface {
     }
 
     public boolean isIndex() {
-        return html.contains("<a href=\"#\" class=\"info MM_LOGINOUT\" onclick=\"nclk(this,'fot.login','','');\">로그인</a>");
+        return html.contains("<a href=\"#\" class=\"mf_info_link MM_LOGINOUT\" data-fclk=\"fot.login\">로그인</a>");
     }
 
     public boolean isBuyPage() {
@@ -74,8 +74,8 @@ public class NaverInterface extends ScriptInterface {
     }
 
     public boolean isMy() {
-        return !isCart() && html.contains("<div class=\"MM_MYSPACE_THUMB lg_user_thumb\">")
-                && html.contains("<a href=\"#\" class=\"info MM_LOGINOUT\" onclick=\"nclk(this,'fot.logout','','');\">로그아웃</a>");
+        return !isCart() && html.contains("<span class=\"shm_profile_thumb MM_PROFILE\" style=\"\">")
+                && html.contains("<a href=\"#\" class=\"mf_info_link MM_LOGINOUT\" data-fclk=\"fot.logout\">로그아웃</a>");
     }
 
     public boolean isLogin() {
@@ -88,7 +88,7 @@ public class NaverInterface extends ScriptInterface {
 
     public void clickMy() {
         Util.toast(view.getContext(), "로그인 클릭");
-        runScript("document.querySelector('.info.MM_LOGINOUT').click()");
+        runScript("document.querySelector('.mf_info_link.MM_LOGINOUT').click()");
     }
 
     public void login() {

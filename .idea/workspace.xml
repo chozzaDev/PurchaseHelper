@@ -7,10 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92f47cab-326a-488c-bce7-ed4c1a844cd9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/CampingActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/CampingInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_camping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_2_0_alpha01_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/ConfigActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/ConfigActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/NaverInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/NaverInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/PublicActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/PublicActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/PublicInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/PublicInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/ScriptInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/ScriptInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/PurchaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/PurchaseConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
@@ -19,7 +29,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="R3CN303FN0Y" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -116,8 +126,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_29" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-10-12T08:21:00.589Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="3.3_WQVGA_API_29" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-28T00:13:31.735Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
@@ -294,8 +304,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PurchaseHelper [cleanBuildCache]" />
         <item itemvalue="Gradle.PurchaseHelper [build]" />
+        <item itemvalue="Gradle.PurchaseHelper [cleanBuildCache]" />
         <item itemvalue="Gradle.PurchaseHelper [buildDependents]" />
         <item itemvalue="Gradle.PurchaseHelper [assemble]" />
         <item itemvalue="Gradle.PurchaseHelper [init]" />
@@ -327,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602488036298</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="공영쇼핑 메시지창 떠도 무시하고 계속 실행">
+      <created>1602566926243</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602566926243</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,106 +363,40 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="구매버튼 속도 증가 및 안정성 패치. &#10;&#10;네이버 구매옵션이 있을 경우 1개까지만 첫번째 옵션으로 자동선택" />
     <MESSAGE value="공영쇼핑 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="공영쇼핑 추가" />
+    <MESSAGE value="공영쇼핑 메시지창 떠도 무시하고 계속 실행" />
+    <option name="LAST_COMMIT_MESSAGE" value="공영쇼핑 메시지창 떠도 무시하고 계속 실행" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1445" y="681" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594262281135">
-      <screen x="0" y="23" width="3200" height="1698" />
+    <state width="2225" height="377" key="GridCell.Tab.0.bottom" timestamp="1619569423036">
+      <screen x="0" y="25" width="2560" height="1331" />
     </state>
-    <state x="1445" y="681" key="#com.intellij.fileTypes.FileTypeChooser/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594262281135" />
-    <state x="756" y="168" key="CommitChangelistDialog2" timestamp="1602488036089">
-      <screen x="0" y="23" width="2560" height="1338" />
+    <state width="2225" height="377" key="GridCell.Tab.0.bottom/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569423036" />
+    <state width="2225" height="377" key="GridCell.Tab.0.center" timestamp="1619569423035">
+      <screen x="0" y="25" width="2560" height="1331" />
     </state>
-    <state x="4407" y="827" key="CommitChangelistDialog2/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594548272994" />
-    <state x="756" y="168" key="CommitChangelistDialog2/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602488036089" />
-    <state x="1590" y="794" key="Github.CreateGistDialog" timestamp="1594261952398">
-      <screen x="0" y="23" width="3200" height="1698" />
+    <state width="2225" height="377" key="GridCell.Tab.0.center/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569423035" />
+    <state width="2225" height="377" key="GridCell.Tab.0.left" timestamp="1619569423035">
+      <screen x="0" y="25" width="2560" height="1331" />
     </state>
-    <state x="1590" y="794" key="Github.CreateGistDialog/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261952398" />
-    <state x="1564" y="810" key="Github.ShareDialog" timestamp="1594270605161">
-      <screen x="0" y="23" width="3200" height="1698" />
+    <state width="2225" height="377" key="GridCell.Tab.0.left/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569423035" />
+    <state width="2225" height="377" key="GridCell.Tab.0.right" timestamp="1619569423035">
+      <screen x="0" y="25" width="2560" height="1331" />
     </state>
-    <state x="1564" y="810" key="Github.ShareDialog/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594270605161" />
-    <state width="2225" height="381" key="GridCell.Tab.0.bottom" timestamp="1602566536565">
-      <screen x="0" y="23" width="2560" height="1338" />
+    <state width="2225" height="377" key="GridCell.Tab.0.right/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569423035" />
+    <state x="1091" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1619569553829">
+      <screen x="0" y="25" width="2560" height="1331" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551407860" />
-    <state width="2225" height="381" key="GridCell.Tab.0.bottom/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602566536565" />
-    <state width="2754" height="501" key="GridCell.Tab.0.bottom/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1596678477193" />
-    <state width="2225" height="381" key="GridCell.Tab.0.center" timestamp="1602566536565">
-      <screen x="0" y="23" width="2560" height="1338" />
-    </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551407860" />
-    <state width="2225" height="381" key="GridCell.Tab.0.center/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602566536565" />
-    <state width="2754" height="501" key="GridCell.Tab.0.center/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1596678477192" />
-    <state width="2225" height="381" key="GridCell.Tab.0.left" timestamp="1602566536565">
-      <screen x="0" y="23" width="2560" height="1338" />
-    </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551407860" />
-    <state width="2225" height="381" key="GridCell.Tab.0.left/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602566536565" />
-    <state width="2754" height="501" key="GridCell.Tab.0.left/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1596678477192" />
-    <state width="2225" height="381" key="GridCell.Tab.0.right" timestamp="1602566536565">
-      <screen x="0" y="23" width="2560" height="1338" />
-    </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551407860" />
-    <state width="2225" height="381" key="GridCell.Tab.0.right/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602566536565" />
-    <state width="2754" height="501" key="GridCell.Tab.0.right/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1596678477193" />
-    <state width="2225" height="468" key="GridCell.Tab.1.bottom" timestamp="1602566534632">
-      <screen x="0" y="23" width="2560" height="1338" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551396617" />
-    <state width="2225" height="468" key="GridCell.Tab.1.bottom/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602566534632" />
-    <state width="2754" height="613" key="GridCell.Tab.1.bottom/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
-    <state width="2225" height="468" key="GridCell.Tab.1.center" timestamp="1602566534632">
-      <screen x="0" y="23" width="2560" height="1338" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551396617" />
-    <state width="2225" height="468" key="GridCell.Tab.1.center/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602566534632" />
-    <state width="2754" height="613" key="GridCell.Tab.1.center/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
-    <state width="2225" height="468" key="GridCell.Tab.1.left" timestamp="1602566534632">
-      <screen x="0" y="23" width="2560" height="1338" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551396617" />
-    <state width="2225" height="468" key="GridCell.Tab.1.left/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602566534632" />
-    <state width="2754" height="613" key="GridCell.Tab.1.left/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
-    <state width="2225" height="468" key="GridCell.Tab.1.right" timestamp="1602566534632">
-      <screen x="0" y="23" width="2560" height="1338" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551396617" />
-    <state width="2225" height="468" key="GridCell.Tab.1.right/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602566534632" />
-    <state width="2754" height="613" key="GridCell.Tab.1.right/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594261056684" />
-    <state x="1389" y="572" key="NewModule_or_Project.wizard" timestamp="1594262128956">
-      <screen x="0" y="23" width="3200" height="1698" />
-    </state>
-    <state x="1389" y="572" key="NewModule_or_Project.wizard/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1594262128956" />
-    <state x="4682" y="1012" key="SettingsEditor" timestamp="1594543753465">
-      <screen x="3840" y="714" width="1920" height="1040" />
-    </state>
-    <state x="4682" y="1012" key="SettingsEditor/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594543753465" />
-    <state x="736" y="348" key="Vcs.Push.Dialog.v2" timestamp="1602488037846">
-      <screen x="0" y="23" width="2560" height="1338" />
-    </state>
-    <state x="4392" y="967" key="Vcs.Push.Dialog.v2/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594548275347" />
-    <state x="736" y="348" key="Vcs.Push.Dialog.v2/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602488037846" />
-    <state x="1244" y="500" width="734" height="486" key="find.popup" timestamp="1602485180216">
-      <screen x="0" y="23" width="2560" height="1338" />
-    </state>
-    <state x="4773" y="1085" width="613" height="538" key="find.popup/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594544595117" />
-    <state x="1244" y="500" width="734" height="486" key="find.popup/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602485180216" />
-    <state x="1555" y="628" width="917" height="486" key="find.popup/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1597040938412" />
-    <state x="1378" y="671" key="git4idea.merge.GitPullDialog" timestamp="1595983465837">
-      <screen x="0" y="23" width="3200" height="1698" />
-    </state>
-    <state x="1378" y="671" key="git4idea.merge.GitPullDialog/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1595983465837" />
-    <state x="1385" y="416" width="670" height="675" key="run.anything.popup" timestamp="1595570709697">
-      <screen x="0" y="23" width="3200" height="1698" />
-    </state>
-    <state x="1385" y="416" width="670" height="675" key="run.anything.popup/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1595570709697" />
-    <state x="1050" y="334" width="670" height="533" key="search.everywhere.popup" timestamp="1602566903750">
-      <screen x="0" y="23" width="2560" height="1338" />
-    </state>
-    <state x="4627" y="956" width="672" height="415" key="search.everywhere.popup/0.0.3840.2120/3840.714.1920.1040@3840.714.1920.1040" timestamp="1594551481501" />
-    <state x="1050" y="334" width="670" height="533" key="search.everywhere.popup/0.23.2560.1338/-3200.-180.3200.1777@0.23.2560.1338" timestamp="1602566903750" />
-    <state x="1312" y="418" width="670" height="676" key="search.everywhere.popup/0.23.3200.1698/-3200.-180.3200.1777@0.23.3200.1698" timestamp="1595983464341" />
+    <state x="1091" y="328" width="670" height="676" key="search.everywhere.popup/0.25.2560.1331/-2560.-178.2560.1415@0.25.2560.1331" timestamp="1619569553829" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/me/namee/purchasehelper/CampingActivity.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

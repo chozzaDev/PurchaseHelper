@@ -59,5 +59,15 @@
             android:paddingVertical="10dp"
             android:text="공영쇼핑 시작"
             android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/btnCampingStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#f47b20"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:text="땡큐캠핑 시작"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

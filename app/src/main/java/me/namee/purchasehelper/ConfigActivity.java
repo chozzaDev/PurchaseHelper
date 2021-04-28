@@ -31,6 +31,10 @@ public class ConfigActivity extends AppCompatActivity {
         b.publicId.setText(config.publicId);
         b.publicPw.setText(config.publicPw);
         b.publicUrl.setText(config.publicUrl);
+        b.campingUrl.setText(config.campingUrl);
+        b.campingStartDate.setText(config.campingStartDate);
+        b.campingDays.setText(config.campingDays);
+
 //        b.naverPayPw.setText(config.naverPayPw);
         b.button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +50,9 @@ public class ConfigActivity extends AppCompatActivity {
                 config.publicId = b.publicId.getText().toString();
                 config.publicPw = b.publicPw.getText().toString();
                 config.publicUrl = b.publicUrl.getText().toString();
+                config.campingUrl = b.campingUrl.getText().toString();
+                config.campingStartDate = b.campingStartDate.getText().toString();
+                config.campingDays = b.campingDays.getText().toString();
 //                config.naverPayPw = b.naverPayPw.getText().toString();
                 realm.commitTransaction();
                 Util.toast(getApplicationContext(), "저장되었습니다.");

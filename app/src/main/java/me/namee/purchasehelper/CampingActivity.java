@@ -15,10 +15,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import io.realm.Realm;
 
-public class PublicActivity extends AppCompatActivity {
+public class CampingActivity extends AppCompatActivity {
 
     WebView view;
-    PublicInterface publicInterface;
+    CampingInterface campingInterface;
     Realm realm;
 
     @Override
@@ -36,8 +36,8 @@ public class PublicActivity extends AppCompatActivity {
         WebViewClient client = new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
-                if (publicInterface == null) return;
-                publicInterface.url = url;
+                if (campingInterface == null) return;
+                campingInterface.url = url;
                 view.loadUrl("javascript:window.Android.getHtml(document.getElementsByTagName('html')[0].innerHTML, '" + url + "')");
             }
 
@@ -69,18 +69,19 @@ public class PublicActivity extends AppCompatActivity {
         view.getSettings().setUserAgentString("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36");
         view.getSettings().setLoadWithOverviewMode(true);
         view.getSettings().setUseWideViewPort(true);
-        publicInterface = new PublicInterface(view, PurchaseConfig.get(realm).copy());
-        view.addJavascriptInterface(publicInterface, "Android");
+        PurchaseConfig config = PurchaseConfig.get(realm).copy();
+        campingInterface = new CampingInterface(view, config);
+        view.addJavascriptInterface(campingInterface, "Android");
         setContentView(view);
-        view.loadUrl("https://www.gongyoungshop.kr/");
+        view.loadUrl(config.campingUrl);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         realm.close();
-        publicInterface.stop();
-        publicInterface = null;
+        campingInterface.stop();
+        campingInterface = null;
         view = null;
     }
 }

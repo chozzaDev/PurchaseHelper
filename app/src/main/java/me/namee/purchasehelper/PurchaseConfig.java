@@ -19,6 +19,11 @@ public class PurchaseConfig extends RealmObject {
     String publicId;
     String publicPw;
     String publicUrl;
+
+    String campingUrl;
+    String campingStartDate;
+    String campingDays;
+
     float waitingTime = 30;
     float refreshTime = 0.5f;
 
@@ -47,6 +52,13 @@ public class PurchaseConfig extends RealmObject {
         return !Strings.isNullOrEmpty(publicId)
                 && !Strings.isNullOrEmpty(publicPw)
                 && !Strings.isNullOrEmpty(publicUrl)
+                && refreshTime > 0 && waitingTime > 0;
+    }
+
+    public boolean runnableCamping() {
+        return !Strings.isNullOrEmpty(campingUrl)
+                && !Strings.isNullOrEmpty(campingStartDate)
+                && !Strings.isNullOrEmpty(campingDays)
                 && refreshTime > 0 && waitingTime > 0;
     }
 

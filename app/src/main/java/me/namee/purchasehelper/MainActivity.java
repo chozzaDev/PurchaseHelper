@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnGmarketStart;
     Button btnNaverStart;
     Button btnPublicStart;
+    Button btnCampingStart;
+
     FloatingActionButton btnConfig;
 
     @Override
@@ -81,6 +83,20 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        btnCampingStart = findViewById(R.id.btnCampingStart);
+        btnCampingStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PurchaseConfig config = PurchaseConfig.get(realm);
+                if(config.runnableCamping()) {
+                    Intent intent = new Intent(MainActivity.this, CampingActivity.class);
+                    startActivity(intent);
+                } else {
+                    Util.toast(getApplicationContext(), "캠핑예약 설정이 없습니다.");
+                }
+            }
+        });
+
         btnConfig = findViewById(R.id.btnConfig);
         btnConfig.setOnClickListener(new View.OnClickListener() {
             @Override
