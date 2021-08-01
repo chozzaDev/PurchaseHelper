@@ -66,13 +66,13 @@ public class PublicActivity extends AppCompatActivity {
         view.setWebViewClient(client);
         view.setWebChromeClient(wcc);
         WebSettingUtil.config(view);
-        view.getSettings().setUserAgentString("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36");
+//        view.getSettings().setUserAgentString("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36");
         view.getSettings().setLoadWithOverviewMode(true);
         view.getSettings().setUseWideViewPort(true);
         publicInterface = new PublicInterface(view, PurchaseConfig.get(realm).copy());
         view.addJavascriptInterface(publicInterface, "Android");
         setContentView(view);
-        view.loadUrl("https://www.gongyoungshop.kr/");
+        view.loadUrl("https://m.gongyoungshop.kr/");
     }
 
     @Override

@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/139f87150265262e27f5462aaa1e6d7b/jetified-realm-android-kotlin-extensions-object-server-7.0.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/139f87150265262e27f5462aaa1e6d7b/jetified-realm-android-kotlin-extensions-object-server-7.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/139f87150265262e27f5462aaa1e6d7b/jetified-realm-android-kotlin-extensions-object-server-7.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-android-kotlin-extensions-object-server/7.0.1/8c48e74abc60a78b28bf552f23356f3f15093855/realm-android-kotlin-extensions-object-server-7.0.1-javadoc.jar!/" />

@@ -13,11 +13,11 @@ public class PublicInterface extends ScriptInterface {
     @Override
     public void getHtml(String html, String url) {
         super.getHtml(html, url);
-        if (isIndex() && !isLogin()) {
+        if (isIndex()) {
             clickMy();
             return;
         }
-        if (isLogin()) {
+        if (isLoginPage()) {
             login();
             return;
         }
@@ -63,7 +63,7 @@ public class PublicInterface extends ScriptInterface {
     }
 
     public boolean isIndex() {
-        return html.contains("<a id=\"btnHdrLogin\" class=\"login\">로그인</a>");
+        return url.contains("/main.do");
     }
 
     public boolean isBuyPage() {
@@ -75,20 +75,21 @@ public class PublicInterface extends ScriptInterface {
     }
 
     public boolean isMy() {
-        return !isBuyPage() && !isCart() && html.contains("<a id=\"btnHdrLogout\" class=\"logout\">로그아웃</a>");
+        return url.contains("mypage/selectMyPageIndex.do");
     }
 
-    public boolean isLogin() {
-        return html.contains("<h4 class=\"h4 noPadding none\">로그인</h4>");
+    public boolean isLoginPage() {
+        return html.contains("<span class=\"a-btn__text\">로그인</span>");
     }
 
     public boolean isClosed() {
-        return !html.contains("<a id=\"btnBuyProduct\"");
+        return !html.contains("id=\"detailBuyingBtn\"");
     }
 
     public void clickMy() {
         Util.toast(view.getContext(), "로그인 클릭");
-        runScript("document.querySelector('#btnHdrLogin').click()");
+        //class="a-icon__mypage"
+        runScript("document.querySelector('.a-icon__mypage').click()");
     }
 
     public void login() {
@@ -96,7 +97,7 @@ public class PublicInterface extends ScriptInterface {
         runScript(
                 "document.getElementById('searchWebMemNo').value = '" + config.getPublicId() + "';" +
                         "document.getElementById('searchWebMemSecrtNo').value = '" + config.getPublicPw() + "';" +
-                        "document.getElementById('loginBtn').click();");
+                        "login.callMbrLogin();");
     }
 
     public void refresh() {
@@ -117,16 +118,20 @@ public class PublicInterface extends ScriptInterface {
 
     public void clickBuy() {
         Util.toast(view.getContext(), "구매버튼 클릭");
+        runScript("document.getElementById('detailBuyingBtn').click()");
+//        runScript("document.querySelector('#prdUntList > li > label').click()");
+
         runScript("document.getElementById('btnBuyProduct').click()");
     }
 
     public void buy() {
         Util.toast(view.getContext(), "구매옵션 선택");
-        runScript("document.querySelector('#paymentCheck3').click(); " +
+        runScript("document.querySelector('#btnBank').click(); " +
                 "document.querySelector('#bankSelect').value = '020';" +
-                "document.querySelector('#rdoCashReceipt3').click();" +
+                "document.querySelector('#receiptNo').click();" +
                 "document.querySelector('#agreeCheck').click();" +
-                "document.querySelector('[prop=btnPayment]').click();");
+                "doPaySubmitWithLoading();");
+//        sleep(10000);
         stop();
     }
 }

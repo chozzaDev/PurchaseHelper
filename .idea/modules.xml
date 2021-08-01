@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PurchaseHelper.iml" filepath="$PROJECT_DIR$/.idea/modules/PurchaseHelper.iml" group="PurchaseHelper" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="PurchaseHelper/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PurchaseHelper.iml" filepath="$PROJECT_DIR$/.idea/modules/PurchaseHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PurchaseHelper.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PurchaseHelper.app.iml" />
     </modules>
   </component>
 </project>

@@ -51,6 +51,7 @@ public class GMarketActivity extends AppCompatActivity {
         view = new WebView(this);
         view.setWebViewClient(client);
         WebSettingUtil.config(view);
+        view.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         gMarketInterface = new GMarketInterface(view, PurchaseConfig.get(realm).copy());
         view.addJavascriptInterface(gMarketInterface, "Android");
         setContentView(view);

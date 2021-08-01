@@ -10,11 +10,14 @@ public class GMarketInterface extends ScriptInterface {
         super(view, config);
     }
 
+    private boolean goingPayment = false;
+
     @JavascriptInterface
     @Override
     public void getHtml(String html, String url) {
         super.getHtml(html, url);
-        if (isIndex()) {
+
+        if (!isMy() && isIndex()) {
             clickMy();
             return;
         }
@@ -28,26 +31,31 @@ public class GMarketInterface extends ScriptInterface {
         }
         if (isCart()) {
             buy();
-//            if (isClosed()) {
-//                sleep();
-//                refresh();
-//            } else {
-//                buy();
-//            }
+            goingPayment = true;
+        }
+
+        if (goingPayment) {
+            if (isBuyPage()) {
+                selectBank();
+            } else {
+                sleep();
+                refresh();
+            }
             return;
         }
+
     }
 
     public void sleep() {
         try {
-            System.out.println((long) (config.getRefreshTime() * 1000));
-            Thread.sleep((long) (config.getRefreshTime() * 1000));
+            System.out.println((long) (config.getRefreshTime() * 3000));
+            Thread.sleep((long) (config.getRefreshTime() * 3000));
         } catch (InterruptedException e) {
         }
     }
 
     public boolean isIndex() {
-        return html.contains("<span class=\"for-a11y\">마이페이지 바로가기</span>");
+        return html.contains("href=\"//mmyg.gmarket.co.kr/v2\"");
     }
 
     public boolean isBuyPage() {
@@ -55,15 +63,15 @@ public class GMarketInterface extends ScriptInterface {
     }
 
     public boolean isCart() {
-        return !isBuyPage() && html.contains("<h2 class=\"h_page\" id=\"simple_header_bar_title\">장바구니</h2>");
+        return url.contains("cart.gmarket.co.kr/ko-m/cart");
     }
 
     public boolean isMy() {
-        return !isCart() && html.contains("<em class=\"cart_num\" id=\"simple_cartIcon\"");
+        return url.contains("mmyg.gmarket.co.kr");
     }
 
     public boolean isLogin() {
-        return html.contains("id=\"id\" placeholder=\"아이디\"");
+        return url.contains("Login/Login");
     }
 
     public boolean isClosed() {
@@ -71,7 +79,7 @@ public class GMarketInterface extends ScriptInterface {
     }
 
     public void clickMy() {
-        runScript("document.querySelectorAll('.list-item__menu > a')[3].click()");
+        runScript("document.querySelector('.link__myg').click()");
     }
 
     public void login() {
@@ -86,7 +94,7 @@ public class GMarketInterface extends ScriptInterface {
     }
 
     public void goCart() {
-        runScript("document.querySelector('[id=simple_cartIcon]').parentElement.click()");
+        runScript("location.href='http://cart.gmarket.co.kr/ko-m/cart';");
     }
 
     public void buy() {
@@ -109,9 +117,9 @@ public class GMarketInterface extends ScriptInterface {
                         "document.getElementById('payChk2').click();" +
                         "document.getElementById('chk_1_2').focus();" +
                         "document.getElementById('chk_1_2').click();" +
-                        "document.querySelector('.sp_cart.ico_ibkbank').parentElement.focus();" +
-                        "document.querySelector('.sp_cart.ico_ibkbank').parentElement.click();" +
-                        "document.querySelector('[data-ng-bind=paymentButtonTitle]').click();");
+                        "document.querySelector('.ico_ibkbank').parentElement.focus();" +
+                        "document.querySelector('.ico_ibkbank').parentElement.click();" +
+                        "document.querySelector('#payment-button').click();");
 //        runScript("document.querySelector('[data-ng-bind=paymentButtonTitle]').click();");
 //        runScript(
 //                "document.querySelectorAll('.box__payment-wrap ul li a')[1].click();" +

@@ -54,6 +54,7 @@ public abstract class ScriptInterface {
         isStop = true;
     }
 
+    @JavascriptInterface
     public void error(String message) {
         System.out.println(message);
     }
